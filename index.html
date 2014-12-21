@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>My web audio API</title>
+<script src="js/jquery.js" ></script>
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+
+</head>
+<body>
+    <div id="player">
+        
+        
+        
+        <div id="player_display" >
+            <canvas id="canvas"  height="325" >
+                
+            </canvas>
+        </div>
+        <div id="player_not_display">
+            <div id="player_info">
+                <p id="player_info_name"></p>
+                <p id="player_info_artist_name"></p>
+            </div>
+            <div id="player_control">           
+                <div><p class="back icon-player" onclick="back()"></p></div>
+                <div><p class="play icon-player" onclick="playButton()"></p></div>
+                <div><p class="stop icon-player" onclick="stopSound()"></p></div>
+                <div><p class="next icon-player" onclick="next()"></p></div>
+            </div>
+            <div id="player-progress">
+                <div id="seek-bar" class="player-seek-bar" style="width:100%;">
+                        <div id="play-bar" class="player-play-bar" ></div>
+                </div>
+            </div>
+            <div id="player-time-holder">
+                    <div id="player-current-time" >&nbsp;</div>
+                    <div id="player-duration" >&nbsp;</div>
+            </div>
+            <div id="player-sound">
+                <div id="volume-back-bar" class="player-seek-bar" style="width:100%;">
+                        <div id="volume-bar" class="player-play-bar" ></div>
+                </div>
+            </div>
+            <div id="player-sound-holder">
+                    <div id="player-mute"><p class="mute icon-player-small" onclick="changeVolume(-10)"></div>
+                    <div id="player-loud"><p class="loud icon-player-small" onclick="changeVolume(100)"></div>
+            </div>
+            <div id="player_playlist">
+                <ul id="player_playlist_list">
+
+                </ul>
+            </div>
+            <h3>Choose a file to load music</h3>
+            <div id="input_file" >
+                <input type="file" id="input_json_file"/> 
+            </div>
+        </div>
+    </div>
+    <script src="js/test.js"></script>
+</body>
+</html>

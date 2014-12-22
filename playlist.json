@@ -1,30 +1,30 @@
 {
     "1": {
-        "url": "http://localhost:8888/MainTunes/web/app_dev.php/getTrack/1",
-        "name": "FullMoon",
-        "icon": "img/5.png",
-        "artist_name": "Beck",
-        "artist_id": 1
+        "url": "music/Motorama - Alps.mp3",
+        "name": "Alps",
+        "icon": "img/motorama.jpg",
+        "artist_name": "Motorama",
+        "artist_id": 2
     },  
-    "5":{
-        "url": "http://localhost:8888/smallPlayer/music/1.mp3",
-        "name": "Hand Of Blood",
-        "icon": "img/6.png",
-        "artist_name": "Thousand foot krutch",
+    "2":{
+        "url": "music/Motorama - Ghost.mp3",
+        "name": "Ghost",
+        "icon": "img/motorama.jpg",
+        "artist_name": "Motorama",
+        "artist_id": 2
+    },
+    "3":{
+        "url": "music/OneOfUs.waw",
+        "name": "One of Us",
+        "icon": "img/goldsun.jpg",
+        "artist_name": "Gold sun",
         "artist_id": 1
     },
     "4":{
-        "url": "music/2.mp3",
-        "name": "Hand Of Blood",
-        "icon": "img/6.png",
-        "artist_name": "Thousand foot krutch",
-        "artist_id": 1
-    },
-    "6":{
-        "url": "music/2.mp3",
-        "name": "Hand Of Blood",
-        "icon": "img/6.png",
-        "artist_name": "Thousand foot krutch",
-        "artist_id": 1
+        "url": "music/StarRebornSample.wav",
+        "name": "Star Reborn (Sample)",
+        "icon": "img/oddsample.jpg",
+        "artist_name": "OddSample",
+        "artist_id": 3
     }
 }

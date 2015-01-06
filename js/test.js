@@ -401,7 +401,7 @@ function changeVolume(percent){
  * @returns {none}
  */
 function changeVolumeBar(event){
-    var positionOnImg = event.pageX - $('#volume-back-bar').position().left;
+    var positionOnImg = event.pageX - $('#volume-back-bar').offset().left;
     var percent = (positionOnImg / $('#volume-back-bar').width())*100;
     changeVolume(percent);
 }
@@ -420,7 +420,7 @@ function changeVolumeBar(event){
  * @returns {none}
  */
 function changeProgressBar(event){
-    var positionOnImg = event.pageX - $('#seek-bar').position().left;
+    var positionOnImg = event.pageX - $('#seek-bar').offset().left;
     var percent = (positionOnImg / $('#seek-bar').width())*100;
     $('#play-bar').attr('style', 'width:'+percent+'%;');
     source.stop(0);
